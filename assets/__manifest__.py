@@ -7,8 +7,10 @@
     'category': 'Tools',
     'summary': 'Strativ Asset Management System',
     'depends': ['web'],
+    'sequence': 1,
     'data': [
         'security/ir.model.access.csv',
+        'views/assets_views.xml',
     ],
     'demo': [
     ],

@@ -1,11 +1,11 @@
-from typing_extensions import Required
 from odoo import models, fields
 
 class Asset(models.Model):
     _name = "assets.asset"
-    _descriptio = "Company Asset or Hardware"
+    _description = "Company Asset or Hardware"
 
-    name = fields.Char(required=True)
-    model_no = fields.Char()
-    serial_no = fields.Char()
-    type = fields.Selection(selection=[(0, 'Laptop'), (1, 'Monitor')])
+    name = fields.Char(string="Name", required=True)
+    model_no = fields.Char(string="Model No")
+    serial_no = fields.Char(string="Serial No")
+    type = fields.Selection(string="Asset Type", selection=[('0', 'Laptop'), ('1', 'Monitor')])
+    note = fields.Text("Description")
