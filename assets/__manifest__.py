@@ -8,6 +8,7 @@
     'summary': 'Strativ Asset Management System',
     'depends': ['web'],
     'data': [
+        'security/ir.model.access.csv',
     ],
     'demo': [
     ],
